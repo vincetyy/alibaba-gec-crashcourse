@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import TitleBar from '../../Bars/TitleBar/TitleBar';
 import Sidebar from '../../Bars/SideBar/Sidebar';
 import ProductDetails from '../ProductDetails/ProductDetails';
@@ -8,6 +9,8 @@ import WorldMap from '../WorldMap/WorldMap';
 import './AddListingHome.css'; // Optional: style your component
 
 const AddListingHome = () => {
+    const [selectedCountries, setSelectedCountries] = useState([]);
+
     return (
         <div className="home-screen">
             <TitleBar />
@@ -19,8 +22,8 @@ const AddListingHome = () => {
                         <ProductAnalysis />
                     </div>
                     <div className="bottom-section">
-                    <CountryFilter />
-                    <SelectedCountries />
+                        <CountryFilter onSelectedCountriesChange={setSelectedCountries} />
+                        <SelectedCountries selectedCountries={selectedCountries} />
                     <WorldMap />
                     </div>
                 </div>

@@ -1,10 +1,11 @@
 import React from 'react';
 import './ProductAnalysis.css';
+import pmd from '../../../assets/pmd.jpg'
 
 const ProductAnalysis = () => {
     return (
         <div className="product-analysis">
-            <img src="your-image-url-here" alt="Thermos Flask" />
+            <img src={ pmd } alt="Thermos Flask" />
             <div className="analysis-text">
                 <h3>AliAdapt <span style={{ color: '#000' }}>Analysis</span></h3>
                 <p><strong>Object:</strong> Thermos Flask</p>

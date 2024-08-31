@@ -3,8 +3,12 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 3;
+    display: flex;
+    flex-direction: column;
+    flex: 4;
     text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
 }
 
 .country-filter .search-input {
@@ -23,7 +27,59 @@
 
 .country-filter .country-table th,
 .country-filter .country-table td {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ddd;
     text-align: left;
+}
+
+.table-wrapper {
+    flex: 1;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling if the table overflows */
+}
+
+.country-table {
+    width: 100%; /* Ensure the table fits the container width */
+    border-collapse: collapse;
+    box-sizing: border-box;
+    color: black; /* Set text color to black */
+}
+
+.country-table th, .country-table td {
+    box-sizing: border-box;
+    padding: 8px 6px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    color: black;
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+.country-table th {
+    box-sizing: border-box;
+    background-color: #f1f1f1; /* Slightly darker background for the header */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.country-table td {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+/* Center flags inside table cells and scale the image */
+.flag-cell-listing {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the cell takes up the full height */
+    box-sizing: border-box;
+}
+
+.flag-cell-listing img {
+    max-width: 40px; /* Scale the image to fit within the cell */
+    max-height: 100%; /* Ensure the image does not exceed the cell's height */
+    object-fit: contain; /* Ensure the image scales while maintaining aspect ratio */
 }

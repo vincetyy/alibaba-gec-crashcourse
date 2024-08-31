@@ -1,10 +1,11 @@
 import React from 'react';
+import world_map from "../../../assets/world_map.png"
 import './WorldMap.css';
 
 const WorldMap = () => {
     return (
         <div className="world-map">
-            <img src="path-to-world-map-image" alt="World Map" />
+            <img src={ world_map } alt="World Map" />
         </div>
     );
 };
