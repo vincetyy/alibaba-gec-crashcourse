@@ -58,21 +58,11 @@
     box-sizing: border-box; /* Include padding in the height calculation */
 }
 
-.top-section {
-    flex: 1; /* Flex value for the top section */
+.top-section, .bottom-section {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box; /* Include padding in the height calculation */
-    overflow: hidden; /* Prevent overflow of the top section */
+    flex-direction: row; /* Arrange child items side by side */
+    gap: 20px; /* Add space between items */
+    height: 50%; /* Divide the screen height evenly */
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+    overflow: hidden; /* Prevent overflow of the section */
 }
-
-.bottom-section {
-    flex: 1; /* Flex value for the bottom section */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box; /* Include padding in the height calculation */
-    overflow: hidden; /* Prevent overflow of the bottom section */
-}
-
