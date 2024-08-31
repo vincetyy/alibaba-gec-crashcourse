@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './SideBar.css';
 
 const SideBar = () => {
-    const [selected, setSelected] = useState('Dashboard');
+    const navigate = useNavigate(); // Initialize useNavigate
+    const location = useLocation(); // Initialize useLocation
+    const [selected, setSelected] = useState('Dashboard'); // Default selected state
 
-    const handleSelection = (item) => {
+    // Update the selected state based on the current location path
+    useEffect(() => {
+        if (location.pathname === '/add-international-listing') {
+            setSelected('Add International Listing');
+        } else {
+            setSelected('Dashboard');
+        }
+    }, [location.pathname]); // Re-run effect when location changes
+
+    const handleSelection = (item, path) => {
         setSelected(item);
+        navigate(path); // Navigate to the specified path
     };
 
     return (
@@ -13,21 +26,15 @@ const SideBar = () => {
             <ul>
                 <li 
                     className={selected === 'Dashboard' ? 'selected' : ''} 
-                    onClick={() => handleSelection('Dashboard')}
+                    onClick={() => handleSelection('Dashboard', '/')}
                 >
                     <span className="logo-text"><span className="brand">AliAdapt</span> Dashboard</span>
                 </li>
                 <li 
                     className={selected === 'Add International Listing' ? 'selected' : ''} 
-                    onClick={() => handleSelection('Add International Listing')}
+                    onClick={() => handleSelection('Add International Listing', '/add-international-listing')}
                 >
                     Add International Listing
-                </li>
-                <li 
-                    className={selected === 'Help Centre' ? 'selected' : ''} 
-                    onClick={() => handleSelection('Help Centre')}
-                >
-                    Help Centre
                 </li>
             </ul>
         </div>

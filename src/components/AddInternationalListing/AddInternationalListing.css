@@ -47,70 +47,32 @@
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
-.content-area {
+.content-area-vertical {
     display: flex;
+    flex-direction: column; /* Stack sections vertically */
     flex: 1;
     height: 100%; /* Make sure the content area takes up the remaining height */
     background-color: #f9f9f9; /* Light background color for content area */
     padding: 20px;
     gap: 20px;
     box-sizing: border-box; /* Include padding in the height calculation */
-    
 }
 
-.left-section {
-    flex: 1; /* Flex value for the left section (larger area) */
-    height: 100%;
+.top-section {
+    flex: 1; /* Flex value for the top section */
     display: flex;
     flex-direction: column;
     gap: 20px;
     box-sizing: border-box; /* Include padding in the height calculation */
+    overflow: hidden; /* Prevent overflow of the top section */
 }
 
-.right-section {
-    flex: 1; /* Flex value for the right section (smaller area) */
-    height: 100%;
+.bottom-section {
+    flex: 1; /* Flex value for the bottom section */
     display: flex;
     flex-direction: column;
     gap: 20px;
     box-sizing: border-box; /* Include padding in the height calculation */
-    overflow: hidden; /* Prevent overflow of the entire content area */
+    overflow: hidden; /* Prevent overflow of the bottom section */
 }
 
-.stat-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-shrink: 0; /* Prevent the stat cards from shrinking */
-    box-sizing: border-box;
-}
-
-.ai-assistant {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Allow the AI assistant to take up remaining space */
-    color: black;
-    box-sizing: border-box;
-    overflow: hidden; /* Ensure the AI assistant doesn't overflow its container */
-}
-
-.chat-window {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto; /* Allows scrolling when content overflows */
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-
-.chat-input {
-    display: flex;
-    border-top: 1px solid #ddd;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    background-color: white;
-    flex-shrink: 0; /* Prevent the input bar from shrinking */
-}

@@ -27,6 +27,7 @@
 .table-wrapper {
     flex: 1;
     box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling if the table overflows */
 }
 
 .data-table {
@@ -41,8 +42,9 @@
     padding: 8px 6px;
     border-bottom: 1px solid #ddd;
     text-align: left;
-    white-space: nowrap; /* Prevent text from wrapping in cells */
-    color: black; /* Set text color to black */
+    color: black;
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
 }
 
 .data-table th {
@@ -57,13 +59,21 @@
     background-color: white;
 }
 
-/* Apply ellipsis only to the Product Name column */
-.data-table td.product-name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 20%;
+
+/* Center flags inside table cells and scale the image */
+.flag-cell {
+    justify-content: center;
+    align-content: center;
 }
+
+.flag-cell img {
+    max-width: 40px; /* Scale the image to fit within the cell */
+    max-height: 100%; /* Ensure the image does not exceed the cell's height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image scales while maintaining aspect ratio */
+}
+
 
 .status {
     box-sizing: border-box;
@@ -73,6 +83,7 @@
     font-weight: bold;
     text-align: center;
     display: inline-block;
+    width: 100%;
 }
 
 .status.processing {
