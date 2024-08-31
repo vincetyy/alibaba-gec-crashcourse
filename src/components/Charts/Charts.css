@@ -12,7 +12,6 @@
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
-    min-width: 300px;
     text-align: center;
 }
 
@@ -25,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px; /* Adjust as needed */
+    /* height: 150px;  Adjust as needed */
 }
 
 .chart-value {
