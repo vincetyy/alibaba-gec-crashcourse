@@ -59,3 +59,6 @@ def start_RA_chatbot():
         print(response)
 
     chat_engine.reset()
+
+if __name__ == "__main__":
+    start_RA_chatbot()

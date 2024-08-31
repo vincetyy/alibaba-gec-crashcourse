@@ -61,3 +61,6 @@ def is_exportable(product_description):
     # VINCE: predicted_class -- verified == 1, not verified == 0. if not verified, redirect to chatbot
     print(predicted_classes)
     return True if predicted_classes[0] == 1 else False
+
+if __name__ == '__main__':
+    is_exportable(product_description)
