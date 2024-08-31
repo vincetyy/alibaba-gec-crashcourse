@@ -1,0 +1,118 @@
+Land Transport Authority (LTA)
+Import Control Regime for PABs and Motorised PMDs
+
+Under the Small Motorised Vehicles (Safety) Act 2020 (SMVA), all importers of Power-Assisted Bicycles (PABs) and motorised Personal Mobility Devices (PMDs) (e.g. electric scooters, electric unicycles, electric skateboards and hoverboards) are required to obtain approval from the Land Transport Authority (LTA) before importing these devices into Singapore.
+
+The import control regime also applies to individuals bringing in PABs or motorised PMDs for personal use (e.g. residents returning to Singapore or travellers entering Singapore).
+
+To import PABs and/or motorised PMDs, importers must apply for an import permit and pay the permit fee via TradeNet. Importers will need to provide the appropriate HS codes, Product codes, and CA/SC codes (where applicable) in the import permit application, and provide all necessary supporting documents.
+
+In general, LTA will only grant import approval for compliant PABs and motorised PMDs. For non-compliant devices, LTA may grant import approval under specific circumstances and subject to LTA’s strict assessment.
+
+Import Control Regime for PABs and Motorised PMDs
+From 28 June 2021, under the Small Motorised Vehicles (Safety) Act 2020 (SMVA), all importers of Power-Assisted Bicycles (PABs) and motorised Personal Mobility Devices (PMDs) are required to obtain approval from the Land Transport Authority (LTA) before importing these devices into Singapore. This applies to devices imported under Harmonised System (HS) codes 87116092, 87116094 and 87116095.
+
+The import control regime is a key upstream measure to stem the inflow of non-compliant PABs and motorised PMDs into Singapore. It reinforces the government’s existing efforts to promote public path and fire safety in the use of active mobility devices.
+
+Under the SMVA, it is an offence (see penalties below) to:
+
+Import PABs and/or motorised PMDs without an import permit
+Provide false or misleading information in an import permit application
+Fail to comply with the conditions of an import approval
+To import PABs and/or motorised PMDs, importers must apply for an import permit and pay the permit fee via TradeNet, Singapore’s National Single Window for trade declaration.
+
+The import control regime also applies to individuals bringing in PABs or motorised PMDs for personal use (e.g. residents returning to Singapore or travellers entering Singapore). Individuals who attempt to bring in PABs or motorised PMDs without a valid import permit may be asked to return to their port of origin (if they wish to keep their device) or dispose of their device on the spot for a fee, or may face penalties and have their device seized. 
+
+The link for import permit can be found at: https://www.lta.gov.sg/content/ltagov/en/industry_innovations/industry_matters/regulations_licensing/active_mobility/import_control_regime_for_pabs_and_motorised_pmds.html#applying_for_an_import_permit
+The link for permit fee may be paid at: https://www.customs.gov.sg/businesses/national-single-window/tradenet
+
+Scope:
+From 28 June 2021, the following types of devices are designated as controlled goods, and require LTA’s approval before importation:
+
+All PABs (HS code 87116094 and 87116095)
+All motorised PMDs (HS code 87116092), including:
+those registrable under the Active Mobility Act 2017 (AMA) (e.g. electric scooters with handlebars including motorised luggage)
+those which are not registrable under the AMA (e.g. electric scooters without handlebars, electric unicycles, electric skateboards, hoverboards)
+Completely knocked down (CKD) devices are not subject to import control at this point. However, LTA may expand the import control regime to include them in future.
+
+The following types of devices are not controlled under LTA's import control regime:
+
+Non-motorised PMDs or bicycles
+Personal mobility aids (e.g. mobility scooters, motorised wheelchairs)
+Motorised pedal cycles with three or more wheels
+Electric motorcycles
+Note: When applying for import approval, devices in the above list should not be declared under HS codes 87116092, 87116094 or 87116095, with the exception of some pocket motorcycles, which may be classified under HS code 87116092. Pocket motorcycles declared under HS code 87116092 should be declared under the product code “MISC” (PDF, 122kb), which is for goods not controlled by LTA.
+
+For enquiries regarding HS classification, you may submit an enquiry to Singapore Customs.
+
+In general, LTA will only grant import approval for compliant motorised PMDs and PABs.
+
+Compliant Devices
+
+Compliant PABs are those that comply with the PAB technical requirements. (Note: From 1 July 2021, PABs must comply with the revised EN15194:2017 standard, and not the old EN15194:2009+A1:2011 standard.)1
+Compliant motorised PMDs are those that comply with the device criteria for use on public paths, i.e. maximum unladen weight of 20kg, maximum width of 70cm, maximum motorised device speed of 25km/h, and certification to the UL2272 fire safety standard.2
+1 Compliant PABs must be type-approved, sealed and registered before they can be used on public roads and cycling paths in Singapore. Granting of import approval by LTA does not guarantee that a PAB will be successfully type-approved, sealed or registered.
+
+ 
+
+2 Compliant e-scooters must be inspected and registered before they can be sold or used on cycling paths. Granting of import approval by LTA does not guarantee that an e-scooter will be successfully registered.
+
+ 
+
+For non-compliant devices, LTA may grant import approval under specific circumstances and subject to LTA’s strict assessment, such as for:
+
+Research
+Re-export
+Commercial or government use exclusively on private land or land with restricted public access
+Military or national security use
+Approval granted to import non-compliant devices may be subject to conditions imposed by LTA.
+
+ To import PABs and/or motorised PMDs, importers must apply for an import permit and pay the permit fee via TradeNet, Singapore’s National Single Window for trade declaration.
+
+You will have to activate a Customs Account, and either appoint a Declaring Agent or register as a Declaring Agent. You or your Declaring Agent must maintain an Inter-bank GIRO with Singapore Customs to pay the import permit fee (and make any other payments). More details on applying for an import permit can be found on Singapore Customs’ website.
+
+You will need to provide the appropriate HS codes, Product codes, and CA/SC codes (where applicable1) (PDF, 163kb) in your import permit application, and provide all necessary supporting documents. 
+
+Supporting Documents and Timelines
+Please take note of the following processes and timelines:
+
+Compliant Devices 	LTA will take up to three working days to process the import permit application submitted via TradeNet (after all necessary documents to support the permit application (PDF, 101kB) have been submitted). Importers are advised to obtain the permit before the goods arrive, to avoid delays.
+Non-compliant Devices	
+For non-compliant devices, there are two stages of application.  Importers are required to first obtain in-principle approval from LTA via email, then apply for the import permit via TradeNet.
+
+1. The request for in-principle approval should be sent to LTA at LTA_import_amdevice@lta.gov.sg, complete with all necessary documents to support the request for in-principle approval (PDF, 101kB), at least six weeks before the date of importation.
+
+(Note: If the devices are to be used on public paths or roads, the importer may need to separately obtain an exemption request from LTA for such use. This process takes up to ten weeks.)
+
+2. LTA will take up to three working days to process the import permit application via TradeNet (after all necessary documents to support the request for in-principle approval (PDF, 101kB), including the letter of in-principle approval from LTA, have been submitted). Importers are advised to obtain the permit before the goods arrive, to avoid delays.
+The import permit fees1 are as follows:
+
+$30 per compliant PAB or motorised PMD approved for import into Singapore.
+$90 per non-compliant PAB or motorised PMD approved for import into Singapore.
+These fees are in addition to any Customs fees that may apply.
+
+1 Permits obtained using the following declaration types may be entitled to permit fee refunds:
+
+INP-APS – Approved Premises / Schemes
+INP-SFZ – Storage in FTZ
+INP-REX – Re-export
+Please contact LTA_import_amdevice@lta.gov.sg for more information.
+
+Under the SMVA, the following penalties are applicable:
+
+Importing a PAB or motorised PMD without approval from LTA
+
+ 	Individuals	Corporations
+First-time offenders	Fine of up to $5,000, or imprisonment for up to 6 months, or both	Fine of up to $10,000
+Repeat offenders	Fine of up to $10,000, or imprisonment for up to 12 months, or both	Fine of up to $20,000
+ 
+
+Providing false or misleading information (e.g. in import permit application)
+
+Fine of up to $5,000, or imprisonment for up to 12 months, or both.
+
+Failing to comply with conditions of import approval
+
+ 	Individuals	Corporations
+First-time offenders	Fine of up to $2,000, or imprisonment for up to 3 months, or both	Fine of up to $5,000
+Repeat offenders	Fine of up to $5,000, or imprisonment of up to 6 months, or both	Fine of up to $10,000
