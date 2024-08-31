@@ -1,0 +1,68 @@
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw;  /* Full width of the viewport */
+    margin: 0;     /* Remove default margin */
+    padding: 0;    /* Remove default padding */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    height: 100%; /* Ensure the main content fills the remaining space */
+}
+
+
+
+.content-area {
+    flex: 1;
+    background-color: #f9f9f9; /* Light background color for content area */
+    padding: 20px;
+    color: #333;
+    overflow-y: auto; /* Allow scrolling within the content area if needed */
+}
+
+
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section .logo {
+    height: 40px; /* Adjust logo height as needed */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.left-section .title-text {
+    font-size: 18px; /* Adjust font size as needed */
+    color: #333; /* Darker text color */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section .language {
+    font-size: 14px;
+    color: #666; /* Grey color for language */
+    margin-right: 15px;
+}
+
+.right-section .separator {
+    height: 20px;
+    width: 1px;
+    background-color: #ddd; /* Light grey separator */
+    margin: 0 15px;
+}
+
+.right-section .notifications-icon, 
+.right-section .user-icon {
+    font-size: 18px;
+    color: #666; /* Grey color for icons */
+    margin-left: 15px;
+    cursor: pointer;
+}
