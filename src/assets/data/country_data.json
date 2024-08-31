@@ -1,0 +1,28 @@
+{
+    "countries": [
+        {
+            "name": "USA",
+            "region": "North America"
+        },
+        {
+            "name": "Australia",
+            "region": "Oceania"
+        },
+        {
+            "name": "Singapore",
+            "region": "Southeast Asia"
+        },
+        {
+            "name": "Malaysia",
+            "region": "Southeast Asia"
+        },
+        {
+            "name": "Vietnam",
+            "region": "Southeast Asia"
+        },
+        {
+            "name": "Indonesia",
+            "region": "Southeast Asia"
+        }
+    ]
+}
