@@ -4,11 +4,12 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    
 }
 
 .sidebar ul li {
     padding: 15px 20px;
-    font-size: 14px;
+    font-size: 0.8rem; /* Smaller font size for the entire table */
     color: #333;
     cursor: pointer;
     border-bottom: 1px solid #eaeaea;
@@ -33,4 +34,5 @@
     color: #FF6600; /* Brand color */
     font-weight: bold;
     margin-right: 5px;
+    
 }

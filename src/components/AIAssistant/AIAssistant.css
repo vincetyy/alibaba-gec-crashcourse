@@ -4,9 +4,9 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    height: 100%;
-    min-width: 300px;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    height: 100%; /* This should be set to 100% of its container */
+    color: black;
+    box-sizing: border-box;
 }
 
 .assistant-header {
@@ -14,17 +14,23 @@
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
 }
 
 .assistant-header .ai-logo {
     height: 30px;
     margin-right: 10px;
+    box-sizing: border-box;
 }
 
 .chat-window {
     flex: 1;
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: auto; /* Allows scrolling when content overflows */
+    display: flex;
+    flex-direction: column;
+    max-height: 400px; /* Set a maximum height for the chat window */
+    box-sizing: border-box;
 }
 
 .chat-bubble {
@@ -32,23 +38,28 @@
     border-radius: 20px;
     margin-bottom: 10px;
     max-width: 70%;
+    box-sizing: border-box;
 }
 
 .chat-bubble.assistant {
     background-color: #f5f5f5;
-    align-self: flex-start;
+    align-self: flex-start; /* Align AI messages to the left */
+    box-sizing: border-box;
 }
 
 .chat-bubble.user {
     background-color: #FF6600;
     color: white;
-    align-self: flex-end;
+    align-self: flex-end; /* Align user messages to the right */
+    box-sizing: border-box;
 }
 
 .chat-input {
     display: flex;
     border-top: 1px solid #ddd;
     padding: 10px 20px;
+    box-sizing: border-box;
+    
 }
 
 .chat-input input {
@@ -58,6 +69,8 @@
     border-radius: 20px;
     background-color: #f9f9f9;
     margin-right: 10px;
+    box-sizing: border-box;
+    color: black;
 }
 
 .chat-input .send-button {
@@ -67,4 +80,5 @@
     border-radius: 20px;
     color: white;
     cursor: pointer;
+    box-sizing: border-box;
 }

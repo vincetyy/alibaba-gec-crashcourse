@@ -19,7 +19,6 @@ const HomeScreen = () => {
                     </div>
                     <div className="right-section">
                         <StatCards />
-                        <Charts />
                         <AIAssistant />
                     </div>
                 </div>
