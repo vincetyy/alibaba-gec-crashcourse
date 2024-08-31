@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './SearchTable.css';
-import usaFlag from '../../assets/flags/usa_flag.png';
-import vietnamFlag from '../../assets/flags/vietnam_flag.png';
-import indonesiaFlag from '../../assets/flags/indonesia_flag.png';
-import koreaFlag from '../../assets/flags/korea_flag.png';
-import philippinesFlag from '../../assets/flags/philippines_flag.png';
-import malaysiaFlag from '../../assets/flags/malaysia_flag.png';
+import usaFlag from '../../../assets/flags/usa_flag.png';
+import vietnamFlag from '../../../assets/flags/vietnam_flag.png';
+import indonesiaFlag from '../../../assets/flags/indonesia_flag.png';
+import koreaFlag from '../../../assets/flags/korea_flag.png';
+import philippinesFlag from '../../../assets/flags/philippines_flag.png';
+import malaysiaFlag from '../../../assets/flags/malaysia_flag.png';
 
 const flagMap = {
     "usa": usaFlag,

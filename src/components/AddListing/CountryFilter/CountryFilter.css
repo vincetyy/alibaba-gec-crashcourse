@@ -1,0 +1,29 @@
+.country-filter {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 3;
+    text-align: center;
+}
+
+.country-filter .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.country-filter .country-table {
+    color: black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.country-filter .country-table th,
+.country-filter .country-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}

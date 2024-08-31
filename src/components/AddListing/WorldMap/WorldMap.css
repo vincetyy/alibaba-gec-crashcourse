@@ -1,0 +1,13 @@
+.world-map {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 5;
+    text-align: center;
+}
+
+.world-map img {
+    width: 100%;
+    object-fit: contain;
+}

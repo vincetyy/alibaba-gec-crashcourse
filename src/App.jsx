@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './components/Dashboard/Dashboard';
-import AddInternationalListing from './components/AddInternationalListing/AddInternationalListing'; // Create this component for your other page
+import DashboardHome from './components/Dashboard/DashboardHome/DashboardHome';
+import AddListingHome from './components/AddListing/AddListingHome/AddListingHome'; // Create this component for your other page
 
 const App = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/add-international-listing" element={<AddInternationalListing />} />
+                <Route path="/" element={<DashboardHome />} />
+                <Route path="/add-international-listing" element={<AddListingHome />} />
             </Routes>
         </Router>
     );

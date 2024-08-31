@@ -1,6 +1,6 @@
 import React from 'react';
 import './TitleBar.css';
-import logo from '../../assets/logos/AliExpress_Seller_Center_Logo.png'; // Import your logo
+import logo from '../../../assets/logos/AliExpress_Seller_Center_Logo.png'; // Import your logo
 
 const TitleBar = () => {
     return (

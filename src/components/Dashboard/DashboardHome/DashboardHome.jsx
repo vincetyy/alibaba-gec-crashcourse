@@ -1,11 +1,11 @@
-import TitleBar from '../TitleBar/TitleBar';
-import Sidebar from '../Sidebar/Sidebar';
+import TitleBar from '../../Bars/TitleBar/TitleBar';
+import Sidebar from '../../Bars/SideBar/Sidebar';
 import SearchTable from '../SearchTable/SearchTable';
 import StatCards from '../StatCards/StatCards';
 import AIAssistant from '../AIAssistant/AIAssistant';
-import './Dashboard.css';
+import './DashboardHome.css';
 
-const Dashboard = () => {
+const DashboardHome = () => {
     return (
         <div className="home-screen">
             <TitleBar />
@@ -25,4 +25,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default DashboardHome;

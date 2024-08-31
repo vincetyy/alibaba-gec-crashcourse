@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import AliAdapt_Logo from '../../assets/logos/AliAdapt_logo.png';
+import AliAdapt_Logo from '../../../assets/logos/AliAdapt_logo.png';
 import './AIAssistant.css';
 
 const AIAssistant = () => {
