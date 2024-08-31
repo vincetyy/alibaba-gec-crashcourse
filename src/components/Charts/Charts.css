@@ -1,0 +1,35 @@
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.chart {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.chart-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.chart-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Adjust as needed */
+}
+
+.chart-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4CAF50;
+}

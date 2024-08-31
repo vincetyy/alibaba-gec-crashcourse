@@ -11,58 +11,63 @@
 .main-content {
     display: flex;
     flex: 1;
-    height: 100%; /* Ensure the main content fills the remaining space */
+    height: calc(100vh - 60px); /* Adjust height to subtract the title bar height */
+    margin-top: 60px; /* Push the content down to account for the fixed title bar */
+    box-sizing: border-box; /* Include padding in the height calculation */
 }
 
+.title-bar {
+    background-color: #ffffff; /* White background for the top bar */
+    padding: 10px 20px;
+    color: #333; /* Darker text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    height: 60px; /* Fixed height for the title bar */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    flex-shrink: 0; /* Prevent the title bar from shrinking */
+    position: fixed; /* Fix the title bar at the top */
+    top: 0; /* Stick to the top */
+    left: 0; /* Stick to the left */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
 
+.sidebar {
+    background-color: #ffffff; /* White background for the sidebar */
+    width: 220px; /* Fixed width for the sidebar */
+    height: 100%; /* Full height of the container */
+    padding: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+    overflow-y: auto; /* Allow scrolling within the sidebar if needed */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
 
 .content-area {
+    display: flex;
     flex: 1;
+    height: 100%; /* Make sure the content area takes up the remaining height */
     background-color: #f9f9f9; /* Light background color for content area */
     padding: 20px;
-    color: #333;
     overflow-y: auto; /* Allow scrolling within the content area if needed */
+    gap: 20px;
 }
-
-
 
 .left-section {
+    flex: 1; /* Flex value for the left section (larger area) */
     display: flex;
-    align-items: center;
-}
-
-.left-section .logo {
-    height: 40px; /* Adjust logo height as needed */
-    margin-right: 10px; /* Space between logo and title */
-}
-
-.left-section .title-text {
-    font-size: 18px; /* Adjust font size as needed */
-    color: #333; /* Darker text color */
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto; /* Ensure the left section can scroll if needed */
 }
 
 .right-section {
+    flex: 1; /* Flex value for the right section (smaller area) */
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto; /* Allow scrolling if right section content overflows */
 }
 
-.right-section .language {
-    font-size: 14px;
-    color: #666; /* Grey color for language */
-    margin-right: 15px;
-}
-
-.right-section .separator {
-    height: 20px;
-    width: 1px;
-    background-color: #ddd; /* Light grey separator */
-    margin: 0 15px;
-}
-
-.right-section .notifications-icon, 
-.right-section .user-icon {
-    font-size: 18px;
-    color: #666; /* Grey color for icons */
-    margin-left: 15px;
-    cursor: pointer;
-}
