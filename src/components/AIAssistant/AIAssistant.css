@@ -29,7 +29,6 @@
     overflow-y: auto; /* Allows scrolling when content overflows */
     display: flex;
     flex-direction: column;
-    max-height: 400px; /* Set a maximum height for the chat window */
     box-sizing: border-box;
 }
 
