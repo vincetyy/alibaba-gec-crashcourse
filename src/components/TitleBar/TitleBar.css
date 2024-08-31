@@ -1,0 +1,54 @@
+.title-bar {
+    background-color: #ffffff; /* White background */
+    padding: 10px 20px;
+    color: #333; /* Darker text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    height: 60px; /* Fixed height */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section .logo {
+    height: 40px; /* Adjust logo height as needed */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.left-section .title-text {
+    font-size: 18px; /* Adjust font size as needed */
+    color: #333; /* Darker text color */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section .language {
+    font-size: 14px;
+    color: #666; /* Grey color for language */
+    margin-right: 15px;
+}
+
+ .separator {
+    height: 20px;
+    width: 1px;
+    background-color: #ddd; /* Light grey separator */
+    margin: 0 15px;
+}
+
+.right-section .notifications-icon, 
+.right-section .user-icon {
+    font-size: 18px;
+    color: #666; /* Grey color for icons */
+    margin-left: 15px;
+    cursor: pointer;
+}
