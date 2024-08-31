@@ -7,6 +7,7 @@ const AIAssistant = () => {
         { text: "Hello, I'm AliAdapt's AI Assistant! I'm here to solve all your cross-border compliance needs. How can I help?", sender: 'assistant' },
     ]);
     const [inputValue, setInputValue] = useState('');
+    const [loading, setLoading] = useState(false);  // Add loading state
 
     // Ref for the chat window
     const chatWindowRef = useRef(null);
@@ -17,12 +18,26 @@ const AIAssistant = () => {
         const newMessage = { text: inputValue, sender: 'user' };
         setMessages([...messages, newMessage]);
         setInputValue('');
+        setLoading(true);  // Set loading to true
 
-        // Simulate assistant reply after 2 seconds
-        setTimeout(() => {
-            const assistantReply = { text: "I'll look into that for you.", sender: 'assistant' };
+        // Simulate a POST request to the API
+        fetch('http://0.0.0.0:8000/query/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ query: inputValue }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            const assistantReply = { text: data.response.response, sender: 'assistant' };
             setMessages((prevMessages) => [...prevMessages, assistantReply]);
-        }, 2000);
+            setLoading(false);  // Set loading to false
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            setLoading(false);  // Set loading to false even if there's an error
+        });
     };
 
     const handleInputChange = (e) => {
@@ -57,6 +72,11 @@ const AIAssistant = () => {
                         {message.text}
                     </div>
                 ))}
+                {loading && (
+                    <div className="chat-bubble assistant loading">
+                        <div className="loader"></div>
+                    </div>
+                )}
             </div>
             <div className="chat-input">
                 <input
