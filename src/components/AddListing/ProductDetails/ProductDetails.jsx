@@ -37,7 +37,7 @@ const ProductDetails = ({ onAnalysisUpdate }) => {
 
     return (
         <div className="product-details">
-            <div>
+            <div className="product-details-url">
                 <label>Product URL</label>
                 <input 
                     type="text" 
@@ -45,19 +45,22 @@ const ProductDetails = ({ onAnalysisUpdate }) => {
                     onChange={handleUrlChange} 
                 />
             </div>
-            <div>
+            <div className="product-details-description">
                 <label>Description</label>
                 <textarea 
                     value={description} 
                     onChange={handleDescriptionChange} 
                 />
             </div>
-            <div className="upload-button">
-                <div className="listing-footnote">
-                    <label>Both domestic and current international product listings are accepted. </label>
+            <div className="product-details-bottom">
+                <div className="upload-button">
+                    <div className="listing-footnote">
+                        <label>Both domestic and current international product listings are accepted. </label>
+                    </div>
+                    <button onClick={handleUpload}>Upload</button>
                 </div>
-                <button onClick={handleUpload}>Upload</button>
             </div>
+            
         </div>
     );
 };
