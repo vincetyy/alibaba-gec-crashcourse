@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TitleBar from '../../Bars/TitleBar/TitleBar';
-import Sidebar from '../../Bars/SideBar/Sidebar';
+import SideBar from '../../Bars/SideBar/SideBar';
 import ProductDetails from '../ProductDetails/ProductDetails';
 import ProductAnalysis from '../ProductAnalysis/ProductAnalysis';
 import CountryFilter from '../CountryFilter/CountryFilter';
@@ -26,7 +26,7 @@ const AddListingHome = () => {
         <div className="home-screen">
             <TitleBar />
             <div className="main-content">
-                <Sidebar />
+                <SideBar />
                 <div className="content-area-vertical">
                     <div className="top-section">
                     <ProductDetails onAnalysisUpdate={handleAnalysisUpdate} />
