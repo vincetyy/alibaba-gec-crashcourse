@@ -21,7 +21,7 @@ const AIAssistant = () => {
         setLoading(true);  // Set loading to true
 
         // Simulate a POST request to the API
-        fetch('http://0.0.0.0:8000/query/', {
+        fetch('http://0.0.0.0:8000/chatbot/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

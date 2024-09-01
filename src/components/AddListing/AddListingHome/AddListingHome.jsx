@@ -6,10 +6,15 @@ import ProductAnalysis from '../ProductAnalysis/ProductAnalysis';
 import CountryFilter from '../CountryFilter/CountryFilter';
 import SelectedCountries from '../SelectedCountries/SelectedCountries';
 import WorldMap from '../WorldMap/WorldMap';
-import './AddListingHome.css'; // Optional: style your component
+import './AddListingHome.css';
 
 const AddListingHome = () => {
     const [selectedCountries, setSelectedCountries] = useState([]);
+    const [analysis, setAnalysis] = useState({});
+
+    const handleAnalysisUpdate = (newAnalysis) => {
+        setAnalysis(newAnalysis);
+    };
 
     return (
         <div className="home-screen">
@@ -18,19 +23,18 @@ const AddListingHome = () => {
                 <Sidebar />
                 <div className="content-area-vertical">
                     <div className="top-section">
-                        <ProductDetails />
-                        <ProductAnalysis />
+                        <ProductDetails onAnalysisUpdate={handleAnalysisUpdate} />
+                        <ProductAnalysis analysis={analysis} />
                     </div>
                     <div className="bottom-section">
                         <CountryFilter onSelectedCountriesChange={setSelectedCountries} />
                         <SelectedCountries selectedCountries={selectedCountries} />
-                    <WorldMap />
+                        <WorldMap selectedCountries={selectedCountries} />
                     </div>
                 </div>
             </div>
         </div>
     );
 };
-
 
 export default AddListingHome;

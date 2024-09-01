@@ -24,4 +24,9 @@ dist-ssr
 *.sw?
 
 .env
-myenv
+/models/myenv
+/models/chroma_db
+/models/storage
+__pycache__/
+fine_tuned_bert_model/
+fine_tuned_bert_tokenizer/
