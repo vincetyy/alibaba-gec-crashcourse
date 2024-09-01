@@ -9,22 +9,25 @@
     overflow: hidden; /* Prevent content from overflowing and expanding the component */
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .product-details-url {
-    flex: 1;
+    align-self: flex-start;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 .product-details-description {
     height: 100%;
-    flex: 5;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .product-details-bottom {
-    flex: 1;
+    align-self: flex-end;
+    width: 100%;
 }
 
 .product-details label {
@@ -48,7 +51,7 @@
 }
 
 .product-details textarea {
-    height: ;
+    resize: none; /* Disable resizing */
 }
 
 .upload-button {
