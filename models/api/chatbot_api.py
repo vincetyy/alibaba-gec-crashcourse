@@ -1,5 +1,4 @@
 from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageContext
 from llama_index.llms.openai import OpenAI
@@ -35,30 +34,19 @@ chat_engine = index.as_chat_engine(chat_mode="condense_question", llm=llm, verbo
 
 # Create the FastAPI app
 app = FastAPI()
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins
-    allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods (GET, POST, etc.)
-    allow_headers=["*"],  # Allows all headers
-)
 
 class QueryModel(BaseModel):
     query: str
 
-@app.post("/query/")
+@app.post("/")
 async def query_bot(query: QueryModel):
     if query.query.lower() == 'x':
         chat_engine.reset()
         return {"response": "Conversation reset."}
     
     try:
-        user_query = query.query + " Limit response to 1 to 2 sentences."
+        user_query = query.query + " Limit response to 1 sentence."
         response = chat_engine.chat(user_query)
         return {"response": response}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)

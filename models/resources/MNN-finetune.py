@@ -1,14 +1,16 @@
 '''This code generates the fine-tuned BERT model and fine-tuned BERT tokenizer on our data and saves them to be loaded later. 
 we include 30% of our layers to be dropout layers in order to prevent overfitting to data.'''
 
+import os
 
+os.environ['TF_USE_LEGACY_KERAS'] = '1'
 from transformers import BertTokenizer, TFBertForSequenceClassification
 import tensorflow as tf
 import numpy as np
 from sklearn.model_selection import train_test_split
 
 LR = 2e-5
-NUM_EPOCHS = 3
+NUM_EPOCHS = 10
 
 # load our data files and assign labels
 def load_texts_and_labels(file_path, label):
@@ -59,7 +61,7 @@ model.compile(
 )
 
 # train the model with early stopping
-# early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
+early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
 model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=NUM_EPOCHS, batch_size=2)
 
 # save the final fine-tuned model & tokenizer

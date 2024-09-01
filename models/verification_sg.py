@@ -47,8 +47,8 @@ def is_exportable(product_description):
     print(f'Your item was found to be a [{item_type}]')
 
     # load fine-tuned model
-    model = TFBertForSequenceClassification.from_pretrained('fine_tuned_bert_model')
-    tokenizer = BertTokenizer.from_pretrained('fine_tuned_bert_tokenizer')
+    model = TFBertForSequenceClassification.from_pretrained('resources/fine_tuned_bert_model')
+    tokenizer = BertTokenizer.from_pretrained('resources/fine_tuned_bert_tokenizer')
 
     # tokenise the product details (should be much faster since the model is already loaded)
     new_inputs = tokenizer(item_type, return_tensors='tf', padding=True, truncation=True, max_length=128)
