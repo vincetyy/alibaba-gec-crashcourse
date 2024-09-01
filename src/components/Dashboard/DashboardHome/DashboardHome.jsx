@@ -1,5 +1,5 @@
 import TitleBar from '../../Bars/TitleBar/TitleBar';
-import Sidebar from '../../Bars/SideBar/Sidebar';
+import SideBar from '../../Bars/SideBar/SideBar';
 import SearchTable from '../SearchTable/SearchTable';
 import StatCards from '../StatCards/StatCards';
 import AIAssistant from '../AIAssistant/AIAssistant';
@@ -10,7 +10,7 @@ const DashboardHome = () => {
         <div className="home-screen">
             <TitleBar />
             <div className="main-content">
-                <Sidebar />
+                <SideBar />
                 <div className="content-area">
                     <div className="left-section">
                         <SearchTable />
