@@ -17,3 +17,13 @@
 .selected-countries li {
     margin-bottom: 10px;
 }
+
+/* Green text for all countries except Singapore */
+.green-text {
+    color: green;
+}
+
+/* Red text for Singapore */
+.red-text {
+    color: red;
+}

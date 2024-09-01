@@ -7,6 +7,10 @@
     gap: 20px; /* Add space between the image and the text */
     align-items: center; /* Align items vertically in the center */
     color: black; /* Text color */
+    flex: 2;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content from overflowing and expanding the component */
 }
 
 .product-analysis img {
@@ -38,4 +42,13 @@
 
 .analysis-text ul li {
     margin-bottom: 5px; /* Space between list items */
+}
+
+.upload-prompt {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
 }

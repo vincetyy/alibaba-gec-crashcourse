@@ -7,7 +7,12 @@ const SelectedCountries = ({ selectedCountries }) => {
             <h4>Selected Countries</h4>
             <ul>
                 {selectedCountries.map((country, index) => (
-                    <li key={index}>{country}</li>
+                    <li
+                        key={index}
+                        className={country === 'Singapore' ? 'red-text' : 'green-text'}
+                    >
+                        {country}
+                    </li>
                 ))}
             </ul>
         </div>
