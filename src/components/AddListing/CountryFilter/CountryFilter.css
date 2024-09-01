@@ -19,19 +19,6 @@
     border: 1px solid #ddd;
 }
 
-.country-filter .country-table {
-    color: black;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.country-filter .country-table th,
-.country-filter .country-table td {
-    padding: 5px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
 .table-wrapper {
     flex: 1;
     box-sizing: border-box;
@@ -68,7 +55,6 @@
     background-color: white;
 }
 
-
 /* Center flags inside table cells and scale the image */
 .flag-cell-listing {
     display: flex; /* Use flexbox for alignment */
@@ -82,4 +68,22 @@
     max-width: 40px; /* Scale the image to fit within the cell */
     max-height: 100%; /* Ensure the image does not exceed the cell's height */
     object-fit: contain; /* Ensure the image scales while maintaining aspect ratio */
+}
+
+/* New CSS for the Review Listing button */
+.review-button {
+    background-color: #FF6600;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px; /* Add space above the button */
+    align-self: flex-end; /* Align button to the right */
+}
+
+.review-button:hover {
+    background-color: #E65500; /* Darken the button on hover */
 }

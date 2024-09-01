@@ -16,7 +16,7 @@ const flagMap = {
     "Indonesia": indonesiaFlag
 };
 
-const CountryFilter = ({ onSelectedCountriesChange }) => {
+const CountryFilter = ({ onSelectedCountriesChange, onReview }) => {
     const [countries, setCountries] = useState([]);
     const [filteredCountries, setFilteredCountries] = useState([]);
     const [selectedCountries, setSelectedCountries] = useState([]);
@@ -53,6 +53,10 @@ const CountryFilter = ({ onSelectedCountriesChange }) => {
             onSelectedCountriesChange(updatedSelected);
             return updatedSelected;
         });
+    };
+
+    const handleReviewClick = () => {
+        onReview();
     };
 
     return (
@@ -94,6 +98,7 @@ const CountryFilter = ({ onSelectedCountriesChange }) => {
                     </tbody>
                 </table>
             </div>
+            <button className="review-button" onClick={handleReviewClick}>Review Listing</button>
         </div>
     );
 };
