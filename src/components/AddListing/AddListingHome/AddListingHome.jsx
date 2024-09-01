@@ -6,14 +6,20 @@ import ProductAnalysis from '../ProductAnalysis/ProductAnalysis';
 import CountryFilter from '../CountryFilter/CountryFilter';
 import SelectedCountries from '../SelectedCountries/SelectedCountries';
 import WorldMap from '../WorldMap/WorldMap';
-import './AddListingHome.css';
+import './AddListingHome.css'; // Optional: style your component
 
 const AddListingHome = () => {
     const [selectedCountries, setSelectedCountries] = useState([]);
+    const [reviewSubmitted, setReviewSubmitted] = useState(false);
+
     const [analysis, setAnalysis] = useState({});
 
     const handleAnalysisUpdate = (newAnalysis) => {
         setAnalysis(newAnalysis);
+    };
+
+    const handleReview = () => {
+        setReviewSubmitted(true);
     };
 
     return (
@@ -23,13 +29,22 @@ const AddListingHome = () => {
                 <SideBar />
                 <div className="content-area-vertical">
                     <div className="top-section">
-                        <ProductDetails onAnalysisUpdate={handleAnalysisUpdate} />
-                        <ProductAnalysis analysis={analysis} />
+                    <ProductDetails onAnalysisUpdate={handleAnalysisUpdate} />
+                    <ProductAnalysis analysis={analysis} />
                     </div>
                     <div className="bottom-section">
-                        <CountryFilter onSelectedCountriesChange={setSelectedCountries} />
-                        <SelectedCountries selectedCountries={selectedCountries} />
-                        <WorldMap selectedCountries={selectedCountries} />
+                        <CountryFilter 
+                            onSelectedCountriesChange={setSelectedCountries} 
+                            onReview={handleReview} 
+                        />
+                        <SelectedCountries 
+                            selectedCountries={selectedCountries} 
+                            reviewSubmitted={reviewSubmitted} 
+                        />
+                        <WorldMap 
+                            selectedCountries={selectedCountries} 
+                            reviewSubmitted={reviewSubmitted}
+                        />
                     </div>
                 </div>
             </div>

@@ -3,52 +3,56 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Use flexbox to align image and text side by side */
-    gap: 20px; /* Add space between the image and the text */
-    align-items: center; /* Align items vertically in the center */
-    color: black; /* Text color */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: black;
     flex: 2;
     width: 100%;
     box-sizing: border-box;
-    overflow: hidden; /* Prevent content from overflowing and expanding the component */
+    overflow: hidden;
+    justify-content: center; /* Center content horizontally */
 }
 
 .product-analysis img {
-    width: 150px; /* Set a fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
     object-fit: contain;
-    margin-bottom: 0; /* Remove bottom margin */
+    margin-bottom: 0;
 }
 
 .analysis-text {
     text-align: left;
-    flex: 1; /* Allow text to take up remaining space */
+    flex: 1;
     color: black;
 }
 
 .analysis-text h3 {
-    color: #FF6600; /* Orange color for the heading */
-    margin-bottom: 10px; /* Space below the heading */
+    color: #FF6600;
+    margin-bottom: 10px;
 }
 
 .analysis-text p {
-    margin: 5px 0; /* Reduce margin for paragraphs */
+    margin: 5px 0;
 }
 
 .analysis-text ul {
-    padding-left: 20px; /* Indent list items */
-    margin-top: 5px; /* Space above the list */
+    padding-left: 20px;
+    margin-top: 5px;
 }
 
 .analysis-text ul li {
-    margin-bottom: 5px; /* Space between list items */
+    margin-bottom: 5px;
 }
 
 .upload-prompt {
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9;
     border-radius: 8px;
     color: #333;
     font-weight: bold;
+    flex: 1; /* Center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

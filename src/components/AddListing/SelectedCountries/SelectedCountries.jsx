@@ -1,7 +1,7 @@
 import React from 'react';
 import './SelectedCountries.css';
 
-const SelectedCountries = ({ selectedCountries }) => {
+const SelectedCountries = ({ selectedCountries, reviewSubmitted }) => {
     return (
         <div className="selected-countries">
             <h4>Selected Countries</h4>
@@ -9,7 +9,7 @@ const SelectedCountries = ({ selectedCountries }) => {
                 {selectedCountries.map((country, index) => (
                     <li
                         key={index}
-                        className={country === 'Singapore' ? 'red-text' : 'green-text'}
+                        className={reviewSubmitted ? (country === 'Singapore' ? 'red-text' : 'green-text') : ''}
                     >
                         {country}
                     </li>

@@ -22,7 +22,7 @@
 .sidebar ul li.selected {
     background-color: #f5f5f5;
     font-weight: bold;
-    color: #FF6600; /* Highlight color for the selected item */
+    color: black; /* Highlight color for the selected item */
 }
 
 .logo-text {

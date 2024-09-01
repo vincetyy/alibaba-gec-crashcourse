@@ -1,11 +1,16 @@
 .selected-countries {
     background-color: white;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px 20px; /* Reduced top padding */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
     text-align: center;
     color: black;
+}
+
+.selected-countries h4 {
+    margin-top: 10px; /* Remove any default margin at the top */
+    margin-bottom: 10px; /* You can adjust this to control space below the heading */
 }
 
 .selected-countries ul {
