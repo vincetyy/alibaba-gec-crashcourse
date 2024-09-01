@@ -70,20 +70,43 @@
     object-fit: contain; /* Ensure the image scales while maintaining aspect ratio */
 }
 
-/* New CSS for the Review Listing button */
-.review-button {
+
+.review-button, .loading-wrapper {
     background-color: #FF6600;
-    width: 100%;
+    width: 100%; /* Ensure both the button and loader take up the full width */
+    height: 40px; /* Set a fixed height for both */
     color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     margin-top: 20px; /* Add space above the button */
     align-self: flex-end; /* Align button to the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Make sure padding and borders are included in the element's width and height */
 }
 
 .review-button:hover {
     background-color: #E65500; /* Darken the button on hover */
+}
+
+.loading-wrapper {
+    background-color: #FF6600; /* Ensure the background matches the button's color */
+}
+
+.loading-wrapper .loader {
+    border: 4px solid #d1d1d1; /* Light grey */
+    border-top: 4px solid #ffffff; /* White */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

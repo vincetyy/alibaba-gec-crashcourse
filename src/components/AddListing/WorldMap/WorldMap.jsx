@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import fullMap from "../../../assets/maps/Full.png";
 import australiaMap from "../../../assets/maps/Australia.png";
 import indonesiaMap from "../../../assets/maps/Indonesia.png";
@@ -17,6 +18,8 @@ const mapImages = {
 };
 
 const WorldMap = ({ selectedCountries, reviewSubmitted, finalMap }) => {
+    const navigate = useNavigate(); // Initialize the navigate function
+
     const filteredCountries = selectedCountries.filter(country =>
         ['Australia', 'Indonesia'].includes(country)
     );
@@ -24,8 +27,14 @@ const WorldMap = ({ selectedCountries, reviewSubmitted, finalMap }) => {
     // Sort and create a key for the mapImages object
     const key = reviewSubmitted ? finalMap : filteredCountries.sort().join(',');
 
+    const handleMapClick = () => {
+        if (reviewSubmitted) {
+            navigate('/'); // Navigate to the dashboard
+        }
+    };
+
     return (
-        <div className="world-map">
+        <div className="world-map" onClick={handleMapClick}>
             <img src={mapImages[key] || fullMap} alt="World Map" />
         </div>
     );

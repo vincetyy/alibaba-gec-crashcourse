@@ -61,7 +61,7 @@ const AIAssistant = () => {
         <div className="ai-assistant">
             <div className="assistant-header">
                 <img src={AliAdapt_Logo} alt="AI Logo" className="ai-logo" />
-                <span>AliAdapt AI Assistant</span>
+                <span className="aliadapt-text">AliAdapt</span> <span className="assistant-text">&nbsp;AI Assistant</span>
             </div>
             <div className="chat-window" ref={chatWindowRef}>
                 {messages.map((message, index) => (

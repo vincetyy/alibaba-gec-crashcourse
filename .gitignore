@@ -25,6 +25,7 @@ dist-ssr
 
 .env
 /models/myenv
+/myenv
 /models/chroma_db
 /models/storage
 __pycache__/
