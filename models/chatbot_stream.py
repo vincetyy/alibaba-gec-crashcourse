@@ -47,7 +47,7 @@ def start_RA_chatbot():
     while True:
         # VINCE: change this to integrate with the chatbot interface
         user_input = input("Enter your question: ")
-        query = user_input + " Limit response to 1 to 2 sentences."
+        query = user_input + " It's important that you limit your response to 1 sentence and answer concisely."
         print()
 
         # VINCE: use this to end the conversation (like a reset button or sth)
