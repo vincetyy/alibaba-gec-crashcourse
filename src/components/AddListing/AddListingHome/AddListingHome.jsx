@@ -11,7 +11,6 @@ import './AddListingHome.css'; // Optional: style your component
 const AddListingHome = () => {
     const [selectedCountries, setSelectedCountries] = useState([]);
     const [reviewSubmitted, setReviewSubmitted] = useState(false);
-
     const [analysis, setAnalysis] = useState({});
 
     const handleAnalysisUpdate = (newAnalysis) => {
@@ -22,6 +21,16 @@ const AddListingHome = () => {
         setReviewSubmitted(true);
     };
 
+    const getSingaporeColor = () => {
+        if (!reviewSubmitted) return ''; // No color before review is submitted
+        return analysis.exportable ? 'green-text' : 'red-text';
+    };
+
+    const getFinalMap = () => {
+        if (!reviewSubmitted) return ''; // No map change before review is submitted
+        return analysis.exportable ? 'Final_Map_Pass.png' : 'Final_Map_Fail.png';
+    };
+
     return (
         <div className="home-screen">
             <TitleBar />
@@ -29,8 +38,8 @@ const AddListingHome = () => {
                 <SideBar />
                 <div className="content-area-vertical">
                     <div className="top-section">
-                    <ProductDetails onAnalysisUpdate={handleAnalysisUpdate} />
-                    <ProductAnalysis analysis={analysis} />
+                        <ProductDetails onAnalysisUpdate={handleAnalysisUpdate} />
+                        <ProductAnalysis analysis={analysis} />
                     </div>
                     <div className="bottom-section">
                         <CountryFilter 
@@ -40,10 +49,12 @@ const AddListingHome = () => {
                         <SelectedCountries 
                             selectedCountries={selectedCountries} 
                             reviewSubmitted={reviewSubmitted} 
+                            singaporeColor={getSingaporeColor()}
                         />
                         <WorldMap 
                             selectedCountries={selectedCountries} 
                             reviewSubmitted={reviewSubmitted}
+                            finalMap={getFinalMap()}
                         />
                     </div>
                 </div>
