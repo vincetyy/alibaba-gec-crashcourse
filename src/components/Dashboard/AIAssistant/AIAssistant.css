@@ -16,6 +16,14 @@
     border-bottom: 1px solid #ddd;
     box-sizing: border-box;
 }
+.aliadapt-text {
+    color: #FF6600; /* Orange color for "AliAdapt" */
+    font-weight: bold; /* Optional: Make the "AliAdapt" text bold */
+}
+
+.assistant-text {
+    color: black; /* Black color for "AI Assistant" */
+}
 
 .assistant-header .ai-logo {
     height: 30px;
@@ -84,7 +92,7 @@
 
 /* Loading animation */
 .loading .loader {
-    border: 4px solid #f3f3f3; /* Light grey */
+    border: 4px solid #d1d1d1; /* Light grey */
     border-top: 4px solid #FF6600; /* Orange */
     border-radius: 50%;
     width: 20px;

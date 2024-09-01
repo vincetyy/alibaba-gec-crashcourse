@@ -15,6 +15,8 @@ const AddListingHome = () => {
 
     const handleAnalysisUpdate = (newAnalysis) => {
         setAnalysis(newAnalysis);
+        setSelectedCountries([]); // Reset selected countries when analysis changes
+        setReviewSubmitted(false); // Reset review state when analysis changes
     };
 
     const handleReview = () => {
@@ -44,7 +46,8 @@ const AddListingHome = () => {
                     <div className="bottom-section">
                         <CountryFilter 
                             onSelectedCountriesChange={setSelectedCountries} 
-                            onReview={handleReview} 
+                            onReview={handleReview}
+                            selectedCountriesProp={selectedCountries}
                         />
                         <SelectedCountries 
                             selectedCountries={selectedCountries} 

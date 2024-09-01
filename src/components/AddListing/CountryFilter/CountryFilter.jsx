@@ -16,11 +16,12 @@ const flagMap = {
     "Indonesia": indonesiaFlag
 };
 
-const CountryFilter = ({ onSelectedCountriesChange, onReview }) => {
+const CountryFilter = ({ onSelectedCountriesChange, onReview, selectedCountriesProp }) => {
     const [countries, setCountries] = useState([]);
     const [filteredCountries, setFilteredCountries] = useState([]);
     const [selectedCountries, setSelectedCountries] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const [loading, setLoading] = useState(false); // Loading state
 
     useEffect(() => {
         // Fetch the countries data from the JSON file
@@ -43,6 +44,11 @@ const CountryFilter = ({ onSelectedCountriesChange, onReview }) => {
         setFilteredCountries(filtered);
     }, [searchTerm, countries]);
 
+    useEffect(() => {
+        // Reset the selectedCountries state when selectedCountriesProp changes
+        setSelectedCountries(selectedCountriesProp);
+    }, [selectedCountriesProp]);
+
     const handleCheckboxChange = (countryName) => {
         setSelectedCountries(prevSelected => {
             const isSelected = prevSelected.includes(countryName);
@@ -56,7 +62,11 @@ const CountryFilter = ({ onSelectedCountriesChange, onReview }) => {
     };
 
     const handleReviewClick = () => {
-        onReview();
+        setLoading(true); // Start loading
+        setTimeout(() => {
+            setLoading(false); // Stop loading after 1 second
+            onReview();
+        }, 1000); // 1-second delay
     };
 
     return (
@@ -98,7 +108,15 @@ const CountryFilter = ({ onSelectedCountriesChange, onReview }) => {
                     </tbody>
                 </table>
             </div>
-            <button className="review-button" onClick={handleReviewClick}>Review Listing</button>
+            <div className="review-button-wrapper">
+                {loading ? (
+                    <div className="loading-wrapper">
+                        <div className="loader"></div>
+                    </div>
+                ) : (
+                    <button className="review-button" onClick={handleReviewClick}>Review Listing</button>
+                )}
+            </div>
         </div>
     );
 };
