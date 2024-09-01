@@ -26,7 +26,7 @@ const SearchTable = () => {
 
     useEffect(() => {
         // Fetch the data from the JSON file
-        fetch('src/assets/data/product_data.json')
+        fetch('/assets/data/product_data.json')
             .then(response => response.json())
             .then(data => {
                 setProducts(data.products);

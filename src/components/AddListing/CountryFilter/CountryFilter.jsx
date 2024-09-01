@@ -24,7 +24,7 @@ const CountryFilter = ({ onSelectedCountriesChange }) => {
 
     useEffect(() => {
         // Fetch the countries data from the JSON file
-        fetch('src/assets/data/country_data.json')
+        fetch('/assets/data/country_data.json')
             .then(response => response.json())
             .then(data => {
                 const sortedCountries = data.countries.sort((a, b) => a.name.localeCompare(b.name));
