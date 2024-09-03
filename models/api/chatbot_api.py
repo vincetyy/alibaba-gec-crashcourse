@@ -45,7 +45,7 @@ async def query_bot(query: QueryModel):
         return {"response": "Conversation reset."}
     
     try:
-        user_query = query.query + " Limit response to 1 sentence."
+        user_query = query.query + " It's important that you limit your response to 2 sentences and answer concisely."
         response = chat_engine.chat(user_query)
         return {"response": response}
     except Exception as e:
