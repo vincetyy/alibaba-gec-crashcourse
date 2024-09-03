@@ -31,3 +31,4 @@ dist-ssr
 __pycache__/
 fine_tuned_bert_model/
 fine_tuned_bert_tokenizer/
+/models/chroma_db
