@@ -1,4 +1,4 @@
-# AliAdapt (emoji)
+# AliAdapt
 ## Creators
 
 [Joel Lim](https://www.linkedin.com/in/limjingkaijoel/): Sourcing state-of-the-art machine learning models and finetuning them.
