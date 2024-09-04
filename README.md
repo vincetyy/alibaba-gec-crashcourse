@@ -17,21 +17,23 @@ The system comprises three main components:
 This component uses a state-of-the-art Large Language Model (LLM) based on GPT-4o mini to extract key attributes from product descriptions. Recent research indicates that LLMs have surpassed traditional Named Entity Recognition (NER) methods in accurately identifying and extracting relevant attributes from text.
 
 ![Video displaying a test case of our model extracting attributes](assets/PAE.gif)
+Demo video: Product attribute extraction of a jacket product listing.
 
 ### **2. Product Classification Model**: 
 A fine-tuned BERT model is used to classify whether a product is eligible for export into the target region without additional permits.
 
 ![Video displaying a test case of our model classifying a product as verified](assets/verification_pass.gif)
-Women's winter padded jacket: Pass!
+Demo video: Women's winter padded jacket: Pass!
 
 ![Video displaying a test case of our model classifying a product as not verified](assets/verification_fail.gif)
-Electric personal mobility device: Fail... (Singapore has strict regulations for these! A permit is required.)
+Demo video: Electric personal mobility device: Fail... (Singapore has strict regulations for these! A permit is required.)
 
 
 ### **3. Retrieval-Augmented Language Model Chatbot**: 
 If a product is found ineligible for export, the system redirects to a chatbot that provides guidance on obtaining the necessary permits based on regulatory compliance rules.
 
-![Video displaying a test case of our model helping a seller with his product permits](assets/aliadapt_assistant.gif)
+![Video displaying a test case of our model helping a seller with his product permits](assets/aliadapt_assistant2.gif)
+Demo video: AliAdapt AI RAG Assistant helping with a seller's query.
 
 ## Additional Screens
 ![Figure displaying our dashboard](assets/dashboard.png)
@@ -47,12 +49,15 @@ Our listing screen where sellers can input their product descriptions and URL, a
 
 **Model Training**: The BERT model and tokenizer must be fine-tuned before running the classification script. Using the script in the resources folder, the appropriate folders to store the model and tokenizer will be generated, after which the classification model can be run.
 
+**Deployment**: Our models are too large in size to deploy on typical serverless cloud platforms. Deploying them on 24/7 cloud instances would incur costs to us as students. We will gladly deploy our backend services online if given the funding to do so.
 
 ## Future Improvements
 
 **Expand Regulatory Data**: Add more countries and regulatory data to the database for broader applicability, if we have the resources to do so, in terms of time, data, and computing power.
 
 **Create Other Modules**: Create modules for other regions that have AliExpress in their country, so that we can generalise the model to help with compliance regulations across the globe.
+
+**Rule-based system**: Include an additional layer that handles explicit rules that may be changing, for black and white regulations. This will improve the cost efficiency of our system even further.
 
 
 ## Literature References
