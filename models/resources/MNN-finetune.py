@@ -19,6 +19,7 @@ def load_texts_and_labels(file_path, label):
     labels = [label] * len(texts)
     return texts, labels
 
+# actual data files are too big to upload -- can try with small data files first
 exportable_texts, exportable_labels = load_texts_and_labels('../data/exportable/exportable.txt', 1)  # pass verification check
 non_exportable_texts, non_exportable_labels = load_texts_and_labels('../data/exportable/non_exportable.txt', 0)  # fail verification check
 texts = exportable_texts + non_exportable_texts
@@ -66,4 +67,4 @@ model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=NUM_EPOCHS, b
 
 # save the final fine-tuned model & tokenizer
 model.save_pretrained('fine_tuned_bert_model')
-tokenizer.save_pretrained('fine_tuned_bert_tokenizer')
+tokenizer.save_pretrained('bert_tokenizer')
