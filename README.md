@@ -47,7 +47,7 @@ Our listing screen where sellers can input their product descriptions and URL, a
 
 **Data Limitations**: Currently, the chatbot only contains only limited regulatory data. Additional data is required for other countries, which can be added by expanding the dataset and generating new embeddings. The reason why we chose to stick with only a small dataset for our project is because embedding a larger dataset and retrieving embeddings from a large vector space can require lots of computing power, which we do not have as students preparing for a demo in a short timeframe.
 
-**Model Training**: The BERT model and tokenizer must be fine-tuned before running the classification script. Using the script in the resources folder, the appropriate folders to store the model and tokenizer will be generated, after which the classification model can be run.
+**Model Training**: The BERT model must be fine-tuned before running the classification script. Using the script in the resources folder, the appropriate folders to store the model and tokenizer will be generated, after which the classification model can be run.
 
 **Deployment**: Our models are too large in size to deploy on typical serverless cloud platforms. Deploying them on 24/7 cloud instances would incur costs to us as students. We will gladly deploy our backend services online if given the funding to do so.
 
