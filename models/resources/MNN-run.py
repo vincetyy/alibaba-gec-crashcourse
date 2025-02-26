@@ -6,7 +6,7 @@ import tensorflow as tf
 
 # load fine-tuned model
 model = TFBertForSequenceClassification.from_pretrained('fine_tuned_bert_model')
-tokenizer = BertTokenizer.from_pretrained('fine_tuned_bert_tokenizer')
+tokenizer = BertTokenizer.from_pretrained('bert_tokenizer') # load bert tokenizer: wordpiece
 
 # VINCE: user's product details to be entered here
 product = [
