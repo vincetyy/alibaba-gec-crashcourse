@@ -1,5 +1,5 @@
 chromadb==0.5.5
-llama_index==0.11.3
+llama_index==0.12.28
 numpy
 openai==1.43.0
 python-dotenv==1.0.1
